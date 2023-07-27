@@ -3,9 +3,15 @@
 window.addEventListener("load", function() {
     let takeOff = document.getElementById("takeoff");
     let flightStatus = document.getElementById("flightStatus");
+    let shuttleBackground = document.getElementById("shuttleBackground");
+    let spaceShuttleHeight = document.getElementById("spacesShuttleHeight");
 
     takeOff.addEventListener('click', event => {
         window.confirm("Confirm that the shuttle is ready for takeoff.");
-              flightStatus.innerHTML = 'Shuttle in flight.';
+        flightStatus.innerHTML = 'Shuttle in flight.';
+        shuttleBackground.style.backgroundColor = "blue";
+
     });
+
+
 });
